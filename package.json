@@ -1,0 +1,43 @@
+{
+  "description": "A front-end library for managing browser cookies data.",
+  "homepage": "https://Coditheck.github.io/advanced_cookie_manager",
+  "name": "@prince-obrymec/advanced-cookie-manager",
+  "author": "Obrymec - obrymecsprinces@gmail.com",
+  "types": "./build/cookie.d.ts",
+  "main": "./build/cookie.js",
+  "sideEffects": false,
+  "version": "0.0.1",
+  "private": false,
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodiTheck/advanced_cookie_manager/issues"
+  },
+  "repository": {
+    "url": "https://github.com/CodiTheck/advanced_cookie_manager.git",
+    "type": "git"
+  },
+  "files": [
+    "./build/cookie.d.ts",
+    "./build/cookie.js"
+  ],
+  "dependencies": {
+    "typescript": "^5.2.2",
+    "uglify-js": "^3.17.4",
+    "parcel": "^2.9.3"
+  },
+  "scripts": {
+    "purge": "rm -rf ./.parcel-cache && rm -rf ./dist",
+    "start": "yarn run purge && parcel ./index.html",
+    "build": "chmod +x ./dist.sh && bash ./dist.sh",
+    "publish": "npm publish --access=public"
+  },
+  "keywords": [
+    "cookie encryption",
+    "encoding cookie",
+    "advanced cookie",
+    "cookie manager",
+    "secure cookie",
+    "cookie parser",
+    "cookie"
+  ]
+}

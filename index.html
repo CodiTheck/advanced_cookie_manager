@@ -1,0 +1,176 @@
+<!--
+	@project: CookieManager - https://CodiTheck.github.io/advanced_cookie_manager
+	@fileoverview: The html structure for package testing.
+	@author: Obrymec - obrymecsprinces@gmail.com
+	@created: 2023-10-16
+	@updated: 2023-10-21
+	@file: index.html
+	@version: 0.0.4
+-->
+
+<!--Cookie manager-->
+<!Doctype html>
+	<!--Structure-->
+	<html lang = "en">
+		<!--Header-->
+		<head>
+      <!--General title--> 
+			<title>
+				Cookie Manager | Testing
+			</title>
+			<!--Encoding: "UTF-8"-->
+			<meta
+        content = "width=device-width, initial-scale=1"
+        name = "viewport"
+        charset = "utf-8"
+      />
+      <!--Bootstrap-->
+      <link
+        integrity = "sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        crossorigin = "anonymous"
+        rel = "stylesheet"
+      />
+      <link
+        href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        rel = "stylesheet"
+      />
+      <!--Package favicon-->
+			<!-- <link
+        ref = "./favicon.ico"
+        rel = "shortcut icon"
+        type = "image/ico"
+      />
+      <link
+        href = "./favicon.ico"
+        type = "image/ico"
+        rel = "icon"
+      /> -->
+      <!--Stylesheets-->
+      <style
+        type = "text/css"
+        media = "screen"
+      >
+        /* Todo list */
+        div.todo-list {
+          margin-top: 26px;
+        }
+
+        /* Text */
+        span.text {
+          display: inline-flex;
+        }
+
+        /* Hidden */
+        .hidden {
+          display: none;
+        }
+
+        /* Options */
+        span.options {
+          display: inline-flex;
+          column-gap: 10px;
+        }
+
+        /* Any tag */
+        * {
+          box-sizing: content-box;
+          transition: all 0.2s;
+          user-select: none;
+        }
+
+        /* Input */
+        span.text > input {
+          padding: 4px 12px 4px 12px;
+          border-radius: 0;
+          font-size: 14px;
+        }
+
+        /* Clear button */
+        button.btn-secondary {
+          padding-right: 0;
+          margin-top: 10px;
+          padding-left: 0;
+          width: 100%;
+        }
+
+        /* Todo item */
+        div.todo-item {
+          justify-content: space-between;
+          border: 1px solid #eee;
+          padding: 10px 1% 10px 1%;
+          display: inline-flex;
+          align-items: center;
+          width: 98%;
+        }
+
+        /* Todo item hover */
+        div.item:hover {
+          background-color: #eee;
+        }
+
+        /* Any icon */
+        span.options > i {
+          background-color: transparent;
+          padding: 4px 9px 4px 9px;
+          border: 1px ridge #ddd;
+          border-radius: 40px;
+          cursor: pointer;
+        }
+
+        /* Any icon hover */
+        span.options > i:hover {
+          background-color: #ddd;
+        }
+      </style>
+		</head>
+		<!--Global container-->
+		<body>
+			<!--Global content-->
+			<main class = "mt-5 ps-4 pe-4">
+        <!--Title-->
+        <h3 class = "text-center">
+          Simple Todo List with cookies
+        </h3>
+        <!--Controls-->
+        <div class = "input-group mt-4">
+          <!--Todo name-->
+          <input
+            title = "Enter the name of your task."
+            class = "form-control"
+            placeholder = "Task"
+            type = "text"
+          />
+          <!--Submit button-->
+          <button
+            title = "Add the task given todo list."
+            class = "btn btn-primary disabled"
+          >
+          <i class = "bi bi-plus-lg"></i>
+          ADD
+        </button>
+        </div>
+        <!--Clear button-->
+        <button
+          title = "Clear all task(s)."
+          class = "btn btn-secondary"
+        >
+          <i class = "bi bi-stars"></i>
+          Clear
+        </button>
+        <!--Todo list-->
+        <div class = "todo-list"></div>
+      </main>
+      <!--External libs-->
+      <script
+        src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity = "sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin = "anonymous"
+      ></script>
+			<!--Test-->
+      <script
+        src = "./index.test.js"
+        type = "module"
+      ></script>
+		</body>
+	</html>
